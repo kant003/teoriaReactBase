@@ -6,15 +6,16 @@ export default function Home() {
     <nav>
       <ul className="flex flex-col gap-4">
         {routes.map(({ to, title, description }) => (
-          <li key={to} className="flex">
+          <li key={to} className='flex'>
             {to ? (
               <LinkDescription
                 to={to}
                 title={title}
                 description={description}
+                
               />
             ) : (
-              <span className="text-2xl font-bold text-orange-300">
+              <span className={`${title?.startsWith('Ejercicio')&&'border border-blue-800'} text-2xl font-bold text-orange-300`}>
                 {title}
               </span>
             )}

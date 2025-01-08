@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vanilla e imperativo -->
+    <div id="nombres"></div>
+    <script>
+        const nombres = ['Pepe', 'Antonio', 'Angel']
+        const $lista = document.getElementById('nombres')
+        for(let i=0;i<nombres.length;i++){
+            const $n = document.createElement('div')
+            $n.textContent = nombres[i]
+            $lista.appendChild($n)
+        }
+    </script>
+</body>
+</html>

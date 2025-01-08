@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <script type='text/babel'>
+        function App(){
+            return <div>
+                    <button>Pulsame1</button>
+                    <button>Pulsame2</button>
+                </div>
+        }
+        const $app = document.getElementById('app')
+        //const $button1 = React.createElement('button', {'id': 123}, 'Púlsame')
+        //const $button2 = React.createElement('button', {'id': 567}, 'Púlsame')
+        //const $contenedor = React.createElement('div', {}, [$button1, $button2])
+        ReactDOM.render(<App/>, $app)
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
