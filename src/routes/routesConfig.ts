@@ -237,4 +237,28 @@ export const routes = [
     description: "Formulario con hooks y generics",
     component: React.lazy(() => import("../pages/Ejercicio11")),
   },
+  {
+    to: "Ejem27",
+    title: "Manejo del contexto",
+    description: "Con useContext",
+    component: React.lazy(() => import("../pages/Ejem27")),
+  },
+  {
+    to: "Ejercicio12",
+    title: "Ejercicio 12: TODO",
+    description: "",
+    component: React.lazy(() => import("../pages/Ejercicio12")),
+  },
+  {
+    to: "Ejercicio13",
+    title: "Ejercicio 13: Maquina Café",
+    description: "",
+    component: React.lazy(() => import("../pages/Ejercicio13")),
+  },
+  {
+    to: "Ejercicio14",
+    title: "Ejercicio 14: Coches",
+    description: "",
+    component: React.lazy(() => import("../pages/Ejercicio14")),
+  },
 ];
