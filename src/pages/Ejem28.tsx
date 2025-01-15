@@ -1,8 +1,9 @@
 import { FormEvent, useRef } from "react"
 
 function Ejem28() {
-    const nombre = useRef(null)
-    const apellido = useRef(null)
+    const nombre = useRef<HTMLInputElement>(null)
+    const apellido = useRef<HTMLInputElement>(null)
+
 
     const handleSubmit = (e:FormEvent) => {
         e.preventDefault()
